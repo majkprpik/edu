@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="predavanje">
+      <div class="col-md-12">
+        <h4>String Interpolation</h4>
+        <p>{{ PRIMJER_STRING_INTERPOLATION }}</p>
+        <h5>{{ PRIMJER_STRING_INTERPOLATION2.header }}</h5>
+        <p>{{ PRIMJER_STRING_INTERPOLATION2.paragraph }}</p>
+        <button>{{ PRIMJER_STRING_INTERPOLATION2.button }}</button>
+        <hr>
+      </div>
+      <div class="col-md-12">
+        <h4>Property Binding</h4>
+        <!-- potrebno staviti "' '" jer je string -->
+        <p [innerHtml]="'Primjer property binding sa stringom'"></p>
+        <p [innerHtml]="PRIMJER_PROPERTY_BINDING_SA_VARIJABLOM"></p>
+        <button [disabled]="true">Klik2</button>
+        <br>
+        <a [href]="LINK">google.com</a>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>INPUT: {{ INPUT_TEXT_PROPERTY_BINDING }}</h6>
+            <h6>CHECKED: {{ INPUT_CHECKBOX_PROPERTY_BINDING }}</h6>    
+          </div>
+          <div class="col-md-6">
+            <input type="text" [value]="INPUT_TEXT_PROPERTY_BINDING" />
+            <div>
+              CHECKED: <input type="checkbox"  [checked]="INPUT_CHECKBOX_PROPERTY_BINDING">
+           </div>
+          </div>
+        </div>          
+        <hr>
+      </div>
+      <div class="col-md-12">
+        <h4>Event binding</h4>
+          <button (click)="klik3()">Klik3</button>
+          <button (click)="klik4($event)">Klik4</button>
+          <input type="text" (input)="pisanje($event)">
+        <hr>
+      </div>
+      <div class="col-md-12">
+        <h4>Two-way databinding</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <h6>INPUT: {{ INPUT_TEXT_TWO_WAY_DATABINDING }}</h6>
+            <h6>CHECKED: {{ INPUT_CHECKBOX_TWO_WAY_DATABINDING }}</h6>   
+          </div>
+          <div class="col-md-6">
+            <!-- potrebno u AppModule u polje imports dodati FormsModule -->
+            <input type="text" [(ngModel)]="INPUT_TEXT_TWO_WAY_DATABINDING" />        
+            <div> 
+              CHECKED: <input type="checkbox" [(ngModel)]="INPUT_CHECKBOX_TWO_WAY_DATABINDING">
+            </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.predavanje {
+    border: 1px red solid;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 5px;
+}
+
+h4 {
+    color: blue;
+}
