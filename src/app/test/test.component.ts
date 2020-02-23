@@ -51,4 +51,46 @@ export class TestComponent {
   
   INPUT_CHECKBOX_TWO_WAY_DATABINDING = true;
   //two-way databidning
+
+  // child component
+  parametarZaChildKomponentu: string = "Test";
+
+  vrijednostIzChildComponente: number;
+  
+  eventIzKomponente(event) {
+    this.vrijednostIzChildComponente = event;
+  }
+  // child component 
+
+  // directive
+  prikazi: boolean = true;
+
+  prikazi_sakrij() {
+    this.prikazi = !this.prikazi;
+  }
+
+  listaVoca = [
+    "jabuka",
+    "kivi",
+    "breskva",
+    "lubenica",
+    "kruska"
+  ]
+
+  podebljan_tekst: boolean = false;
+
+  podebljan() {
+    this.podebljan_tekst = true;
+  }
+
+  normalan() {
+    this.podebljan_tekst = false;
+  }
+
+  stil: number = 0;
+
+  postavi_stil(n){
+    this.stil = n;
+  }
+  // directive
 }

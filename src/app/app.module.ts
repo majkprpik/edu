@@ -19,6 +19,7 @@ import { MiroslavComponent } from './miroslav/miroslav.component';
 import { ZdravkoComponent } from './zdravko/zdravko.component';
 import { HrvojeComponent } from './hrvoje/hrvoje.component';
 import { MajaComponent } from './maja/maja.component';
+import { TestChildComponent } from './test/test-child/test-child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MajaComponent } from './maja/maja.component';
     MiroslavComponent,
     ZdravkoComponent,
     HrvojeComponent,
-    MajaComponent
+    MajaComponent,
+    TestChildComponent
   ],
   imports: [
     BrowserModule,
