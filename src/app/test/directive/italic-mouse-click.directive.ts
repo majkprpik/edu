@@ -13,8 +13,9 @@ import {
 export class ItalicMouseClickDirective implements OnInit {
   @HostBinding('style.fontStyle') fontStyle: string = 'normal';
 
-  @HostListener("click") mouseclick(eventData: Event) {
+  @HostListener("click", ["$event"]) mouseclick(eventData: Event) {
     this.fontStyle = 'italic';
+    console.log('event', eventData)
   }
   
 
