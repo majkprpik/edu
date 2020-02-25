@@ -21,6 +21,15 @@ import { HrvojeComponent } from './hrvoje/hrvoje.component';
 import { MajaComponent } from './maja/maja.component';
 import { TestChildComponent } from './test/test-child/test-child.component';
 
+import { PodebljajDirective } from './test/directive/podebljaj.directive';
+import { ZelenaPozadinaDirective } from './test/directive/zelena-pozadina.directive';
+import { BoldMouseOverDirective } from './test/directive/bold-mouse-over.directive';
+import { ItalicMouseClickDirective } from './test/directive/italic-mouse-click.directive';
+import { DirectiveWithPropertyDirective } from './test/directive/directive-with-property.directive';
+import { DirectiveWithMainPropertyDirective } from './test/directive/directive-with-main-property.directive';
+import { CustomStructuralDirectiveDirective } from './test/directive/custom-structural-directive.directive';
+import { SetColorDirectiveDirective } from './test/directive/set-color-directive.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +48,15 @@ import { TestChildComponent } from './test/test-child/test-child.component';
     ZdravkoComponent,
     HrvojeComponent,
     MajaComponent,
-    TestChildComponent
+    TestChildComponent,
+    PodebljajDirective,
+    ZelenaPozadinaDirective,
+    BoldMouseOverDirective,
+    ItalicMouseClickDirective,
+    DirectiveWithPropertyDirective,
+    DirectiveWithMainPropertyDirective,
+    CustomStructuralDirectiveDirective,
+    SetColorDirectiveDirective,
   ],
   imports: [
     BrowserModule,

@@ -92,5 +92,28 @@ export class TestComponent {
   postavi_stil(n){
     this.stil = n;
   }
+
+  prikazanoPovrce = 'kelj';
+  case1 = 'salata';
+  case2 = 'cikla';
+  case3 = 'kelj';
+  case6 = 3;
+
+  ngIfDrugaSintaksa = true;
+
+  klik5() {
+    this.ngIfDrugaSintaksa = !this.ngIfDrugaSintaksa;
+  }
+
+  highlightColorForDirectiveWithProperty = 'gold';
+
+  highlightColorForDirectiveWithPropertyDynamic = 'blue';
+
+
+  ngIfNasaDirectiva = true;
+
+  klik6() {
+    this.ngIfNasaDirectiva = !this.ngIfNasaDirectiva;
+  }
   // directive
 }
