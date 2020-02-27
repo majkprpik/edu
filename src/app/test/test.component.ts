@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NGXLogger } from 'ngx-logger';
 
 @Component({
   selector: 'app-test',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
+  /**
+   *
+   */
+  constructor() {}
   // string interpolation  
   PRIMJER_STRING_INTERPOLATION = 'Primjer string interpolation';
     
@@ -114,6 +119,7 @@ export class TestComponent {
 
   klik6() {
     this.ngIfNasaDirectiva = !this.ngIfNasaDirectiva;
+    
   }
   // directive
 }

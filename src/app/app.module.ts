@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { DirectiveWithPropertyDirective } from './test/directive/directive-with-
 import { DirectiveWithMainPropertyDirective } from './test/directive/directive-with-main-property.directive';
 import { CustomStructuralDirectiveDirective } from './test/directive/custom-structural-directive.directive';
 import { SetColorDirectiveDirective } from './test/directive/set-color-directive.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,9 @@ import { SetColorDirectiveDirective } from './test/directive/set-color-directive
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    LoggerModule.forRoot({serverLoggingUrl: 'http://localhost:3000/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.DEBUG}),
   ],
   providers: [],
   bootstrap: [AppComponent]
