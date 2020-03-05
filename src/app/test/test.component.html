@@ -228,5 +228,86 @@
         </div>
       </div>
     </div>
+
+    <div class="predavanje">
+      <h2>4.</h2>
+      <div class="col-md-12">
+        <h4>Services:</h4>
+        <div class="primjer">
+          <h6>Offline data, continents from file:</h6>
+          <div *ngFor="let continent of continents">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ continent?.text }}</h5>
+                <p class="card-text">{{ (continent?.items)[0].description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primjer">
+          <h6>Online data, drzave from spin database:</h6>
+          <div *ngFor="let drzava of drzave">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ drzava?.drzaveid }}</h5>
+                <p class="card-text">{{ drzava?.naziv }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primjer">
+          <h6>
+            Online data, dummy data from
+            <p>https://my-json-server.typicode.com/majkprpik/jsontest/news:</p>
+          </h6>
+          <div *ngFor="let article of news">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">{{ article?.guid }}</h5>
+                <p class="card-text">{{ article?.text }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primjer">
+          <h6>
+            Online data, pokemon from
+            <p>https://pokeapi.co/api/v2/pokemon/ditto/:</p>
+          </h6>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ pokemon?.id }}</h5>
+              <p class="card-text">{{ pokemon?.name }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="primjer">
+          <h6>
+            Online data, chuck norris jokes from
+            <p>https://api.chucknorris.io/jokes/random:</p>
+          </h6>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ chuck?.id }}</h5>
+              <p class="card-text">{{ chuck?.value }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="primjer">
+          <h6>
+            Online data, lotr from
+            <p>
+              https://the-one-api.herokuapp.com/v1/book/5cf5805fb53e011a64671582:
+            </p>
+          </h6>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{ lotr?._guid }}</h5>
+              <p class="card-text">{{ lotr?.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
