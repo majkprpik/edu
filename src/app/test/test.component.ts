@@ -124,6 +124,7 @@ export class TestComponent implements OnInit {
   pokemon;
   chuck;
   lotr;
+  usersReqRes = [];
   ngOnInit() {
     this.continents = this.dataService.getContinents();
     this.OnlineDataService.getSpinData()
@@ -141,7 +142,6 @@ export class TestComponent implements OnInit {
         return response.json();
       })
       .then(result => {
-        console.log(result);
         this.news = result;
       })
       .catch(err => {
@@ -152,30 +152,38 @@ export class TestComponent implements OnInit {
         return response.json();
       })
       .then(result => {
-        console.log(result);
         this.pokemon = result;
       })
       .catch(err => {
         console.log(err);
       });
-      this.OnlineDataService.getChuck()
+    this.OnlineDataService.getChuck()
       .then(response => {
         return response.json();
       })
       .then(result => {
-        console.log(result);
         this.chuck = result;
       })
       .catch(err => {
         console.log(err);
       });
-      this.OnlineDataService.getLOTR()
+    this.OnlineDataService.getLOTR()
+      .then(response => {
+        return response.json();
+      })
+      .then(result => {
+        this.lotr = result;
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    this.OnlineDataService.getReqRes()
       .then(response => {
         return response.json();
       })
       .then(result => {
         console.log(result);
-        this.lotr = result;
+        this.usersReqRes = result.data;
       })
       .catch(err => {
         console.log(err);

@@ -307,6 +307,26 @@
             </div>
           </div>
         </div>
+        <div class="primjer">
+          <h6>
+            Online data, dummy users from
+            <p>
+              https://reqres.in/api/users:
+            </p>
+          </h6>
+          <div class="card" style="width: 18rem;">
+            <div *ngFor="let users of usersReqRes">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{ users?.id }}</h5>
+                  <p class="card-text">{{ users?.email }}</p>
+                  <p class="card-text">{{ users?.first_name }}</p>
+                  <p class="card-text">{{ users?.last_name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
