@@ -1,4 +1,15 @@
 <p>senkovic works!</p>
-
 <br>
-<div> Ima li tu nečega? </div>
+<div> Ima li tu nečega? </div><br>
+<div>{{nekaVarijabla}}</div><br>
+<button (click)="callService()">Call service</button> <br>
+
+
+    <div *ngFor="let item of lista">
+        <span>{{item.title}}</span> <br> <span>{{item.body}}</span>
+    </div>
+
+
+
+
+
