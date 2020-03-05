@@ -10,7 +10,7 @@ import { LoggingService } from '../services/logging.service';
 })
 export class DavorComponent implements OnInit {
 
-  public name = 'idemo na pivo';
+  public name = 'sutra ne častim';
 
   constructor(private _dataService: DataService, private _onlineDataService: OnlineDataService, private _loggingService: LoggingService) { }
 
