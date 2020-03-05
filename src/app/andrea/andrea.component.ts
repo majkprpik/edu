@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OnlineDataService } from "../services/online-data.service";
 
 @Component({
   selector: 'app-andrea',
@@ -9,9 +10,22 @@ export class AndreaComponent implements OnInit {
 
   testVar="broj1"
 
-  constructor() { }
+  constructor( private OnlineDataService: OnlineDataService) { 
+    
+  }
 
   ngOnInit(): void {
-  }
+  this.OnlineDataService.getAPIandre()
+  .then(response => {
+    return response.json();
+  })
+  .then(response => {
+    console.log("testAndr",response);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+}
 
 }
