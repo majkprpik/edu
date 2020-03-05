@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SenkovicComponent implements OnInit {
 
+
+  nekaVarijabla = "senkovic";
+  
   constructor() { }
 
   ngOnInit(): void {
