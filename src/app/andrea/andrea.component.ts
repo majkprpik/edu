@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AndreaComponent implements OnInit {
 
-  broj: number=4
+  testVar="broj1"
 
   constructor() { }
 
