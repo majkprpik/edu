@@ -1,1 +1,17 @@
-<p>janko works!</p>
+<p>{{myVar}}</p>
+
+<p><input type="text" [value]="myVar"/></p>
+
+<input type="text" [(ngModel)]="myVar2"/>
+<p>Evo: {{myVar2}}</p>
+
+<button (click)="klik()">YO</button>
+
+<p *ngIf="b">Točno</p>
+
+<ul>
+    <li *ngFor="let a of array"><button (click)=del(a)>{{a}}</button></li>
+</ul>
+
+<p><input type="text" [value]="d"/></p>
+<button (click)="add(d)">add</button>
