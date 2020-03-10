@@ -1,49 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/test">TEST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/ana">Ana</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/andrej">Andrej</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/andrea">Andrea</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/davor">Davor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/denis">Denis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/filip">Filip</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/goran">Goran</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/hrvoje">Hrvoje</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/ivan">Ivan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/janko">Janko</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/maja">Maja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/miroslav">Miroslav</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/nemanja">Nemanja</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/senkovic">Senkovic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/zdravko">Zdravko</a>
+      </li>
+      
+    
+    </ul>
+  </div>
+</nav>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6 playground">
-      <app-test></app-test>
-    </div>
-    <div class="col-md-6 playground">
-      <app-ana></app-ana>
-    </div>
-    <div class="col-md-6 playground">
-      <app-andrea></app-andrea>
-    </div>
-    <div class="col-md-6 playground">
-      <app-davor></app-davor>
-    </div>
-    <div class="col-md-6 playground">
-      <app-denis></app-denis>
-    </div>
-    <div class="col-md-6 playground">
-      <app-filip></app-filip>
-    </div>
-    <div class="col-md-6 playground">
-      <app-goran></app-goran>
-    </div>
-    <div class="col-md-6 playground">
-      <app-hrvoje></app-hrvoje>
-    </div>
-    <div class="col-md-6 playground">
-      <app-ivan></app-ivan>
-    </div>
-    <div class="col-md-6 playground">
-      <app-janko></app-janko>
-    </div>
-    <div class="col-md-6 playground">
-      <app-maja></app-maja>
-    </div>
-    <div class="col-md-6 playground">
-      <app-miroslav></app-miroslav>
-    </div>
-    <div class="col-md-6 playground">
-      <app-nemanja></app-nemanja>
-    </div>
-    <div class="col-md-6 playground">
-      <app-senkovic></app-senkovic>
-    </div>
-    <div class="col-md-6 playground">
-      <app-zdravko></app-zdravko>
-    </div>
+    <div class="col-md-12 playground">
+     <router-outlet></router-outlet>
+    </div>    
   </div>
 </div>

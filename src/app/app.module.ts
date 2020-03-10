@@ -31,6 +31,7 @@ import { DirectiveWithMainPropertyDirective } from './test/directive/directive-w
 import { CustomStructuralDirectiveDirective } from './test/directive/custom-structural-directive.directive';
 import { SetColorDirectiveDirective } from './test/directive/set-color-directive.directive';
 import { HttpClientModule } from '@angular/common/http';
+import { AndrejComponent } from './andrej/andrej.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { HttpClientModule } from '@angular/common/http';
     DirectiveWithMainPropertyDirective,
     CustomStructuralDirectiveDirective,
     SetColorDirectiveDirective,
+    AndrejComponent,
   ],
   imports: [
     BrowserModule,
