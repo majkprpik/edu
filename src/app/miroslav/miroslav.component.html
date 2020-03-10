@@ -1,1 +1,22 @@
 <p>miroslav works!</p>
+<p>{{moja}}</p>
+<p>
+<input [value]="drugavar" />
+<br/>
+{{drugavar}}
+</p>
+<p>
+    <input [(ngModel)]="drugavar" />   
+</p>
+<p> <button (click)="callService()">Call service</button>    </p>
+<div *ngIf="mojabool">
+    <h1>True</h1>
+</div>
+<div *ngIf="!mojabool">
+    <h1>False</h1>
+</div>
+<p> <button (click)="promjeni()">Promjeni</button>    </p>
+<ul> 
+    <li *ngFor="let item of polje" (click)="odaberi(item)">{{item}}</li>
+
+</ul>
