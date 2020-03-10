@@ -182,7 +182,6 @@ export class TestComponent implements OnInit {
         return response.json();
       })
       .then(result => {
-        console.log(result);
         this.usersReqRes = result.data;
       })
       .catch(err => {
